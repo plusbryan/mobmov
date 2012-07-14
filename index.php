@@ -114,7 +114,7 @@ require("common/top.php");
 
                 <?=roundedbox(TOP,"d7d7d7","8","200");?>
                        <span style="font-size:8pt">
-                       <b>Filmmakers:</b> gain a worldwide audience by releasing your film through the MobMov. <a href="film.php"  style="color:black"  class="nodeco"><u>Find out more</u></a>
+                       <b>Filmmakers:</b> gain a worldwide audience for free by releasing your film through the MobMov. <a href="film.php"  style="color:black"  class="nodeco"><u>Find out more</u></a>
 
                 <?=roundedbox(BOTTOM);?>
        </div>
@@ -144,7 +144,8 @@ require("common/top.php");
             <tr>
                 <td valign="top">
                 <span class="header-font" style="font-size:15pt;line-height:2em">This is the modern drive-in:</span><br/>
-                <span>The <b><a href="http://en.wikipedia.org/wiki/Mobmov" target="_blank" style="text-decoration:underline">Mobile Movie</a></b> is bringing back the forgotten joy of <a href="http://en.wikipedia.org/wiki/Drive-in_theater" target="_blank" style="text-decoration:underline">the great American drive-in</a> in urban settings across the world. <b>Powered by cars</b> and video projectors, MobMov's are easy and affordable to set up. Abandoned warehouse walls spring to life with the sights and sounds of a big screen movie.
+                <span>The <b><a href="http://en.wikipedia.org/wiki/Mobmov" target="_blank" style="text-decoration:underline">Mobile Movie</a></b> is bringing back the forgotten joy of <a href="http://en.wikipedia.org/wiki/Drive-in_theater" target="_blank" style="text-decoration:underline">the great American drive-in</a> in urban settings across the world. <b>Powered by cars</b> and video projectors, MobMov's are easy and affordable to set up.
+                    Abandoned warehouse walls spring to life with the sights and sounds of a big screen movie.
                  <a href="/about"  class="nodeco" style="text-decoration:underline">read more</a></span>
 
                 <br/><br/>MobMov has been running strong since 2005, and is the earliest "urban drive-in" of it's kind. In fact, the term MobMov (short for Mobile Movie) was coined by <a href="http://aboutbryan.com">Bryan Kennedy</a>, the founder of mobmov.org, to describe the unique "drive-in that drives-in" method he developed.
