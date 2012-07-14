@@ -16,7 +16,7 @@ We are the global guerilla drive-in movement bringing back the forgotten joy of 
 
 
 <P><B><span class="header">How do I participate in a MobMov?</span><BR>
-</B>Simple. Sign up to our mailing list. Showings are held approximately every two weeks usually on the weekend. The day before the Mob, we'll e-mail everyone with the location and the movie. If you want to join in, all you have to do is fill your car with your friends and find the spot.</P>
+</B>Simple. Sign up to our mailing list. Shows are held approximately every two weeks usually on the weekend. The day before the Mob, we'll e-mail everyone with the location and the movie. If you want to join in, all you have to do is fill your car with your friends and find the spot.</P>
 <!--<IMG src="graphics/mobmovcar.png" width="150" height="170" align="right" hspace=5>-->
 <P><B><span class="header">What does a typical MobMov look like?</span><BR>
 </B>The exciting bit about the MobMov is that its almost never held in the same place twice. At the start of the show, you'll tune your radios into the station specified at the beginning of the film, and then sit back and relax. </P>
@@ -30,7 +30,7 @@ We didn't create the term "Guerilla Drive-in", but we're the first to use it cor
 This new approach is better for a variety of reasons. Drive-ins were popular originally because it was like having your own private cineplex - if you wanted privacy, you'd just roll up your windows. If you wanted to be part of a community, you'd roll them down, open your doors, maybe even walk around. Secondly, while a traditional GDI only operates in the summer, you can stay in your car with the heater running while participating in a mobmov. That's rain or shine folks and folketts.</P>
 
 <P><B><span class="header">How do I start my own MobMov?</span><BR>
-</B>Interest has been growing in the mobmov at a rapid pace. We've heard from people all over the world who want to see it brought to their shores and towns. Well, we say, the more the merrier! If you're interested in starting your own mobmov, we're happy to lend a hand in getting started. To that effect, we have video animations, equipment lists, and tutorials on how to set all of this up yourself. We'd love to list you as a "mobmov chapter" on this site, and host a mailing list for showings in your area. So click on the e-mail us link at right and we'll get you going.</P>
+</B>Interest has been growing in the mobmov at a rapid pace. We've heard from people all over the world who want to see it brought to their shores and towns. Well, we say, the more the merrier! If you're interested in starting your own mobmov, we're happy to lend a hand in getting started. To that effect, we have video animations, equipment lists, and tutorials on how to set all of this up yourself. We'd love to list you as a "mobmov chapter" on this site, and host a mailing list for shows in your area. So click on the e-mail us link at right and we'll get you going.</P>
 
 <P><B><span class="header">Why do you call it MobMov?</span><BR>
 

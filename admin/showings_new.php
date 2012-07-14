@@ -38,8 +38,8 @@ $verbose[] = "$sql";
             
               <tr>
                 <td valign="top">
-                <span class="page_head">Showings</span><br>
-                <span class="page_subhead">Set up and manage showings for your chapter here.</span><br><hr size="1" width="100%" noshade color="#dddddd"><br>
+                <span class="page_head">Shows</span><br>
+                <span class="page_subhead">Set up and manage shows for your chapter here.</span><br><hr size="1" width="100%" noshade color="#dddddd"><br>
 
                 	<table border="0" cellpadding="4" cellspacing="0" width="100%">
 					<?

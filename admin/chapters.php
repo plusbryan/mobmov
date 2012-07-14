@@ -74,7 +74,7 @@ if ($action == "approve") {
         $from = "info@mobmov.org";
         $subject = "Welcome aboard!";
         $body = "
-CONGRATS! Your chapter has been approved. If you haven't already, quickly start setting up your kit so you can start showings.\n\n
+CONGRATS! Your chapter has been approved. If you haven't already, quickly start setting up your kit so you can start shows.\n\n
 The driver control panel is located at: http://www.mobmov.org/admin\n
 Your username is '$approve_email' and your password is the one you chose during setup.\n\n
 The forum is located at: http://forum.mobmov.org/\n

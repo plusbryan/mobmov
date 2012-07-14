@@ -13,7 +13,7 @@
 		
 		<table border=0 cellpadding=10 width="450"><tr><td align="center">
 		        <font size="1" color="#aaaaaa">"MobMov", "Mobile Movie", the MobMov logo, and "The drive in that drives in" are trademarks of MobileMovie LLC and may not be used without permission.<br>Copyright &copy <?=date('Y')?>. MobileMovie LLC. All rights reserved.<br/><br/>
-		        Chapters are operated independently of MobileMovie LLC, and we take no responsibility for the actions of their independent operators. MobileMovie LLC strongly supports filmmaker rights and advocates obtaining licenses for public movie showings.</font><br/><br/>
+		        Chapters are operated independently of MobileMovie LLC, and we take no responsibility for the actions of their independent operators. MobileMovie LLC strongly supports filmmaker rights and advocates obtaining licenses for public movie shows.</font><br/><br/>
 				<a href="http://<?=$_SERVER['SERVER_NAME']?>/privacy.php"><font size="1" color="#aaaaaa">privacy policy</font></a></div><br><br><br></td></tr></table>
 		
     </center>

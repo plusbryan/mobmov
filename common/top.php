@@ -281,7 +281,7 @@ if ($rsvp) {
     <TITLE>MobMov: modern drive-in and Mobile Movie outdoor cinema</TITLE>
     <LINK href="http://<?=$_SERVER['SERVER_NAME']?>/common/style.css" type="text/css" rel="stylesheet" media="all">
     <meta http-equiv="imagetoolbar" content="false" />
-    <META NAME="DESCRIPTION" CONTENT="The mobmov or mobile movie, is a worldwide guerilla movie movement bringing back the drive-in in a whole new way. Showings are announced online and everyone shows up at the disclosed location in their cars to watch a drive-in movie like the days of old.">
+    <META NAME="DESCRIPTION" CONTENT="The mobmov or mobile movie, is a worldwide guerilla movie movement bringing back the drive-in in a whole new way. Shows are announced online and everyone shows up at the disclosed location in their cars to watch a drive-in movie like the days of old.">
     <META NAME="KEYWORDS" CONTENT="guerilla drive-in,mobmov,moviemob,drive-in,mobile movie,drivein,car,independant film,flashmob">
 </HEAD>
 <?

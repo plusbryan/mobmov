@@ -117,7 +117,7 @@ if ($action == "more") {
 
 
     <TABLE border="0" cellspacing="0" cellpadding="3">
-        <tr><td rowspan=7 valign="top"><b><FONT size="3">join now</FONT></B>&nbsp;<FONT >and we'll e-mail you<br> about upcoming showings:</font><br/><br/><font class="small">we promise to never spam or <br/>otherwise misuse your information.</font></td></tr>
+        <tr><td rowspan=7 valign="top"><b><FONT size="3">join now</FONT></B>&nbsp;<FONT >and we'll e-mail you<br> about upcoming shows:</font><br/><br/><font class="small">we promise to never spam or <br/>otherwise misuse your information.</font></td></tr>
 
         <TR>
             <TD align="right" width="50"><B>email:</B></TD>

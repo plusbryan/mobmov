@@ -15,7 +15,7 @@
         </tr>-->
       <tr>
         
-        <td colspan="2" class="font-b"><a href="showings.php" class="font-b">Showings</a></td>
+        <td colspan="2" class="font-b"><a href="showings.php" class="font-b">Shows</a></td>
         </tr>
         <? if($global_superuser){ ?>
         <tr>
