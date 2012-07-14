@@ -3,7 +3,7 @@ require_once("functions.php");
 
 // handle mailing list actions
 $action = request('action',GET);
-$removefromlist = request('remv',GET);
+$removefromlist = request('rem',GET);
 
 if ($action == "addtolist" || $action == "more") {
     // ADD TO MAILING LIST
@@ -66,9 +66,9 @@ if ($action == "addtolist" || $action == "more") {
                 $fromname = "MobMov";
                 $from = "info@mobmov.org";
                 $subject = "Please confirm your email";
-                $body = "$name,\r\nA very warm welcome to you, our newest member! Before you can get notifications of drive-in events in your area, you'll need to confirm your email address with us by clicking this link:\r\n\r\n
+                $body = "A very warm welcome to you! Before you can get notifications of drive-in events in your area, you'll need to confirm your email address with us by clicking this link:\n\n
 http://mobmov.org/signup?action=confirm&mem=$member_id
-\r\n\r\nRemember join our twitter feed (http://twitter.com/mobmov) for news and events. We'll be looking forward to meeting you at our next event!\r\n\r\nIf our emails ever get annoying and you want to unsubscribe, just click:\r\n\r\nhttp://mobmov.org/?rem=$email";
+\r\nRemember join our twitter feed (http://twitter.com/mobmov) for news and events. We'll be looking forward to meeting you at our next event!\r\n\r\nTo unsubscribe, just click:\r\n\r\nhttp://mobmov.org/?rem=$email";
                 email($to,$subject,$body);
             }
 

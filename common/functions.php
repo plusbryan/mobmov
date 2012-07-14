@@ -463,19 +463,8 @@ function email($to,$subject,$body) {
 	require_once('AmazonSESMailer.php');
 
 	$mail = new AmazonSESMailer(SES_ID,SES_KEY);
-    
-    if (is_array($to)) {
-		foreach ($to as $oneto) {
-			$oneto = filterformat(EMAIL,$oneto);
-            if ($oneto<>'') {
-				$mail->AddAddress($oneto);
-			}
-		}
-	} else {
-		$mail->AddAddress($to);
-	}
-    
     $mail->SetFrom('info@mobmov.org','MobMov');
+    $mail->AddAddress($to);
     $mail->Subject = $subject;
     $mail->Body = $body;
 

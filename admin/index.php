@@ -17,7 +17,7 @@ if ($resetpass) {
     	}
         $sql = "UPDATE members SET password = OLD_PASSWORD('$newpassword') WHERE member_id = '$member_id' LIMIT 1";
         $result = mysql_query($sql);
-        email($resetpass,"info@mobmov.org","MobMov Admin","Your password has been reset","On your request, we have reset your password for the MobMov Driver Garage (http://mobmov.org/admin) to: $newpassword\n\nIf you did not request your password to be reset, please inform us at info@mobmov.org");
+        email($resetpass,"Your password has been reset","On your request, we have reset your password for the MobMov Admin (http://mobmov.org/admin) to:\n\n$newpassword\n\nIf you did not request your password to be reset, please inform us at info@mobmov.org");
     	$passwordreset = $resetpass;
     } else {
     	$nousererror = true;
