@@ -52,7 +52,7 @@ Welcome, <?=$global_name?>! &nbsp;<br>
     <!-- BUTTON -->
     <div onClick="JavaScript:location='movies.php?setup=y';" class="main_button">
 		<?=roundedbox(TOP,"ffd08e","8","120");?>
-        	<img src="images/camera.gif"><br><br>Set up Showing
+        	<img src="images/camera.gif"><br><br>Set up Show
 		<?=roundedbox(BOTTOM);?>
     </div> 
     <!-- END BUTTON -->
@@ -98,13 +98,7 @@ Welcome, <?=$global_name?>! &nbsp;<br>
 
 <td>
 	
-	<!-- BUTTON -->
-    <div onClick="JavaScript:location='http://community.mobmov.org/';" class="main_button">
-		<?=roundedbox(TOP,"d4ebff","8","120");?>
-        	<img src="images/type.gif"><br><br>Forum
-		<?=roundedbox(false);?>
-    </div> 
-    <!-- END BUTTON -->
+
 
 </td>
 

@@ -66,43 +66,32 @@ $verbose[] = "$sql";
 					}
 					
 					if ($result) {
-					while($row = mysql_fetch_array($result)) { 
-						foreach($row AS $key => $val){ 
-							$key = "showing_".strtolower($key);
-							$$key = $val; 
-						}
+					while($row = mysql_fetch_array($result)) {
                         
                         if ($show_all) {
 					?>     
                           	  <tr>
-                                <td class="line0"><?=get_movie_name($showing_feature)?></td>
-                                <td class="line0"><a href="http://maps.google.com/?q=<?=$showing_lat?>,<?=$showing_lon?>"><?=$showing_location?></a></td>
-                                <td class="line0"><?=sdatetime($showing_showtime)?></td>
-                                <td class="line0"><?=$showing_rsvps ?></td>
+                                <td class="line0"><?=get_movie_name($row['feature_movie_id'])?></td>
+                                <td class="line0"><?=get_location_name($row['location_id'])?></td>
+                                <td class="line0"><?=sdatetime($row['showtime'])?></td>
+                                <td class="line0"><?=$row['rsvps'] ?></td>
                                 <td>
-                                	<nobr><input name="Button" type="button" class="form_button" value="Edit" onClick="JavaScript:location='showings.php?id=<?=$showing_showing_id?>';"> 
-                                	<input name="Button" type="button" class="form_button_red" value="Delete" onClick="JavaScript:location='delete.php?table=showings&col=showing_id&id=<?=$showing_showing_id?>';"><br>
-                                	<input name="Button" type="button" class="form_button" value="Announce" onClick="JavaScript:location='mailings.php?new=y&type=showing&showing_id=<?=$showing_showing_id?>';">
+                                	<nobr><input name="Button" type="button" class="form_button" value="Edit" onClick="JavaScript:location='showings.php?id=<?=$row['showing_id']?>';">
+                                	<input name="Button" type="button" class="form_button_red" value="Delete" onClick="JavaScript:location='delete.php?table=showings&col=showing_id&id=<?=$row['showing_id']?>';"><br>
+                                	<input name="Button" type="button" class="form_button" value="Announce" onClick="JavaScript:location='mailings.php?new=y&type=showing&showing_id=<?=$row['showing_id']?>';">
                                 	</nobr>
                                 </td>
                               </tr>
 <?
                       	} else {
                         	$edit = true;
-                        	
-?>	
-                        
+                        	?>
                    				<form action="save.php" method="post" enctype="multipart/form-data" name="form1">
                                 	<input type="hidden" name="skipid" value="showing_id">
-                                    <input type="hidden" name="showing_id" value="<?=$showing_showing_id?>">
+                                    <input type="hidden" name="showing_id" value="<?=$row['showing_id']?>">
                                     <input type="hidden" name="table" value="showings">
                                     <input type="hidden" name="return" value="showings.php">
-                                  <tr>
-                                    <td align="right"><b>Feature</b></td>
-                                    <td>
-										<input type="text" name="feature" value="<?=$showing_feature?>">
-									</td>
-                                  </tr>
+
                                  
                                   <tr>
                                     <td align="right"><b>Dated</b></td>
@@ -110,8 +99,8 @@ $verbose[] = "$sql";
 									
 									
 											<!-- select date and time -->
-											<table border=0 cellpadding=1><tr><td><script>DateInput('showtime_date', true, 'DD-MM-YYYY', '<?=date("d-m-Y",$showing_showtime);?>')</script></td><td> at
-											<input name="showtime_time!" type="text" class="form_text" size="9" value="<?=date("g:i A",$showing_showtime);?>"></td></tr></table>
+											<table border=0 cellpadding=1><tr><td><script>DateInput('showtime_date', true, 'DD-MM-YYYY', '<?=date("d-m-Y",$row['showtime']);?>')</script></td><td> at
+											<input name="showtime_time!" type="text" class="form_text" size="9" value="<?=date("g:i A",$row['showtime']);?>"></td></tr></table>
 											<!-- end -->
 									
 									
@@ -119,22 +108,14 @@ $verbose[] = "$sql";
                                   </tr>
                                    
                           
-                         		  <tr>
-                                    <td align="right"><b>Location</b></td>
-                                    <td>
-                                    
-                                    Create Location: <input type="text" id="location" value="<?=$showing_location?>"> <input type="button" value="Save">
-                                    	<input type="hidden" name="lat" value="<?=$showing_lat?>">
-                                     	<input type="hidden" name="lon" value="<?=$showing_lon?>">
-                                    </td>
-                                  </tr>
+
                                   
                                   
                                   <tr>
                                     <td align="right"><b>Still On?</b></td>
                                     <td>
 									
-											<select name="stillon"><option value="1" <?=selected($showing_stillon,1)?>>Yes</option><option value="0" <?=selected($showing_stillon,0)?>>No</option></select>
+											<select name="stillon"><option value="1" <?=selected($row['stillon'],1)?>>Yes</option><option value="0" <?=selected($row['stillon'],0)?>>No</option></select>
 									
 									</td>
                                   </tr>
@@ -143,7 +124,7 @@ $verbose[] = "$sql";
                                     <td align="right"><b>Pre-Show Announcements</b></td>
                                     <td>
 									
-											<textarea name="preshow_comments" rows="4" cols="60"><?=$showing_preshow_comments?></textarea>
+											<textarea name="preshow_comments" rows="4" cols="60"><?=$row['preshow_comments']?></textarea>
 									
 									</td>
                                   </tr>
@@ -152,7 +133,7 @@ $verbose[] = "$sql";
                                     <td align="right"><b>Post-Show Comments</b></td>
                                     <td>
 									
-											<textarea name="postshow_comments" rows="4" cols="60"><?=$showing_postshow_comments?></textarea>
+											<textarea name="postshow_comments" rows="4" cols="60"><?=$row['postshow_comments']?></textarea>
 									
 									</td>
                                   </tr>
@@ -161,7 +142,7 @@ $verbose[] = "$sql";
                                   
                                   <tr>
                                     <td align="right">&nbsp;</td>
-                                    <td><input name="Submit" type="submit" class="form_button" value="Update">&nbsp;<input name="Button" type="button" class="form_button_red" value="Delete" onClick="JavaScript:location='delete.php?table=showings&col=showing_id&id=<?=$showing_showing_id?>';">&nbsp;<a href="showings.php">Back</a></td>
+                                    <td><input name="Submit" type="submit" class="form_button" value="Update">&nbsp;<input name="Button" type="button" class="form_button_red" value="Delete" onClick="JavaScript:location='delete.php?table=showings&col=showing_id&id=<?=$row['showing_id']?>';">&nbsp;<a href="showings.php">Back</a></td>
                                   </tr> 
                      		 	</form>
 					  <?
