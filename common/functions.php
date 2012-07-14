@@ -34,6 +34,12 @@ define('REGEX_ZIP','^[[:digit:]]{5}(-[[:digit:]]{4})?$');
 // -----------
 
 
+if (php_sapi_name() == 'cli' && empty($_SERVER['REMOTE_ADDR'])) {
+    define('CLI', true);
+} else {
+    define('CLI', false);
+}
+
 
 if (in_array($_SERVER["SERVER_ADDR"],$devhosts)){
 	//$_SERVER['SERVER_NAME'] = DEVHOST;
