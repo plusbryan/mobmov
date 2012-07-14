@@ -68,7 +68,7 @@ if ($action == "addtolist" || $action == "more") {
                 $subject = "Please confirm your email";
                 $body = "$name,\r\nA very warm welcome to you, our newest member! Before you can get notifications of drive-in events in your area, you'll need to confirm your email address with us by clicking this link:\r\n\r\n
 http://mobmov.org/signup?action=confirm&mem=$member_id
-\r\n\r\nRemember to check the forums (http://forum.mobmov.org) for news and events. We'll be looking forward to meeting you at our next event!\r\n\r\nIf our emails ever get annoying and you want to unsubscribe, just click:\r\n\r\nhttp://mobmov.org/?rem=$email";
+\r\n\r\nRemember join our twitter feed (http://twitter.com/mobmov) for news and events. We'll be looking forward to meeting you at our next event!\r\n\r\nIf our emails ever get annoying and you want to unsubscribe, just click:\r\n\r\nhttp://mobmov.org/?rem=$email";
                 email($to,$subject,$body);
             }
 

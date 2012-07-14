@@ -27,41 +27,7 @@ if ($action == "approve") {
         	$$key = $val; 
         }
 		mysql_free_result($result);
-        
-        if (!$approve_username){
-        	// find user by email address
-            /*
-        	$sql = "SELECT user_id FROM phpbb_users WHERE user_email='$approve_email'";
-	    	$result = mysql_query($sql);
-	        if ($result && mysql_num_rows($result) > 0) {
-	        	$forum_user_id = mysql_result($result,0,0);
-	        }
-	        // create new group link to drivers group for this user
-	        if ($forum_user_id) {
-	        	$sql = "DELETE FROM phpbb_user_group WHERE user_id='$forum_user_id' LIMIT 1";
-	    		$result = mysql_query($sql);
-	        	$sql = "INSERT INTO phpbb_user_group SET user_id='$forum_user_id',group_id='3'";
-	    		$result = mysql_query($sql);
-	        }
-            */
-        } else {
-	        // SET UP USERNAME AND PASSWORD FOR DRIVER
-            /*
-	    	$phpbb_root_path = '../../forum.mobmov.org/';
-	
-	    	$phpEx='php';
-			define('IN_PHPBB', true);
-			include($phpbb_root_path . 'extension.inc');
-			include($phpbb_root_path . 'common.'.$phpEx);
-			include($phpbb_root_path . 'includes/sql_parse.' . $phpEx);
-			include($phpbb_root_path.'includes/functions_mod_user.php'); // WARNING: conflicts with mysql connection!!
-			$username = $approve_username;
-			$user_password = "driver";
-			$user_email = $approve_email;
-			$group_id = 3;
-			insert_user($username, $user_password, $user_email, $group_id);
-            */
-        }
+
         
 		//SET APPROVED
         $sql = "UPDATE chapters SET approved='y' WHERE chapter_id=$chapter_id LIMIT 1";
@@ -77,7 +43,6 @@ if ($action == "approve") {
 CONGRATS! Your chapter has been approved. If you haven't already, quickly start setting up your kit so you can start shows.\n\n
 The driver control panel is located at: http://www.mobmov.org/admin\n
 Your username is '$approve_email' and your password is the one you chose during setup.\n\n
-The forum is located at: http://forum.mobmov.org/\n
 Your forum username is '$approve_username' and your password is 'driver'. Please change this in the forum when you first log in.\n\n
 You can log in now to download the manifesto (instructions for firing up your mobmov chapter), video titles for your use, and access your mailing list.\n\n
 If you would like to be featured on our home page, please send us a profile picture and a brief (1 paragraph) bio about yourself and your chapter.\n\n
