@@ -1,0 +1,7 @@
+Please vote for your favorite:
+
+%choice_1%  %choice_1_vote%
+%choice_2%  %choice_2_vote%
+%choice_3%  %choice_3_vote%
+%choice_4%  %choice_4_vote%
+%choice_5%  %choice_5_vote%

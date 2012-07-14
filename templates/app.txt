@@ -1,0 +1,15 @@
+MobMov Chapter Application
+
+Name: #name#
+Email: #email#
+City: #city#, #state#, #country#
+MobMov Name: #title#
+
+Why this spot?
+#whyhere#
+
+Need help?
+#equipment#
+
+Why doing this?
+#why#

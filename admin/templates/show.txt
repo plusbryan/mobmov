@@ -1,0 +1,29 @@
+**********************************************************************
+MobMov.org & %chapter_title% present "%feature_title%"
+%showing_date% at %showing_time%
+%chapter_location%
+**********************************************************************
+Please RSVP: %rsvp%
+%intro%
+%feature_title%
+%feature_info%
+
+**********************************************************************
+Location
+**********************************************************************
+%location_title%
+%location_url%
+%location_instructs%
+
+**********************************************************************
+Radio station: %location_radio%
+
+**********************************************************************
+Instructions & Information:
+http://www.mobmov.org/guides.php
+
+**********************************************************************
+Bottom of the page:
+%news%
+
+Please RSVP: %rsvp%

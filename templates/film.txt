@@ -1,0 +1,17 @@
+Application for film approval:
+Title: #title#
+Genre: #genre#
+Description:
+#desc#
+
+URL: #url#
+
+Premiere? #premiere#
+
+History of distribution:
+#history#
+
+Name: #name#
+Roll: #roll#
+Email: #email#
+Phone: #phone#
