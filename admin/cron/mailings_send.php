@@ -7,8 +7,6 @@ $max_sends = 200;
 @include("/var/www/mobmov.org/common/functions.php");
 print "/Load\n";
 
-define('PRODUCTION',false);
-
 // LOCKFILE
 // check for lockfile - make sure we're not duplicating processes
 $lockfile = "/tmp/mobmov_mailer_lockfile";
