@@ -26,7 +26,7 @@ require("common/top.php");
                     <INPUT type="hidden" name="action" value="addtolist">
 
 
-                                <TABLE border="0" cellspacing="0" cellpadding="3">
+                      <TABLE border="0" cellspacing="0" cellpadding="3">
 
                             <TR>
                                 <TD align="right" width="50" style="color:white;font-size:12px;"><B>email:</B></TD>
@@ -49,8 +49,8 @@ require("common/top.php");
                     <option value=""> </option>
                             <?
 
-                            $preselect_chapter = $_GET['preselect_chapter'];
-                            if (!$preselect_chapter) { $preselect_chapter = 195; }
+                    $preselect_chapter = $_GET['preselect_chapter'];
+                    if (!$preselect_chapter) { $preselect_chapter = 1; }
 
                     db_connect();
                     $SQL ="SELECT chapter_id,city,state,country,new FROM chapters WHERE accepting='y' AND approved ='y' ORDER BY country DESC,state,city";
