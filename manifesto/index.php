@@ -181,7 +181,7 @@
         
 		<p class="article-header"><b>Setting it all up</font></b></p>
 		<p>There's really no magic to connecting all these components together. Video out to video in, audio out to audio in, power out to power in. That's about it. Electronic interference has suddenly become your worst enemy though, thanks to that fiddly FM transmitter, so when making your purchases keep in mind that shorter, thicker cabling is better.</p>
-		<p><img src="diagram.png" height="294" width="592"></p>
+		<p><img src="images/diagram.png" height="294" width="592"></p>
 		
         
         <p>Congrats, you've got it all set up. If you're steamed and need a break before continuing, these photos are pretty <a href="http://www.likebetter.com">fun and entertaining</a>.</p>
