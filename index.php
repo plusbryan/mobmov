@@ -142,7 +142,7 @@ require("common/top.php");
     <TD height="600" valign="top">
         <table border=0 cellpadding=8 cellspacing=0 id="header-mid">
             <tr>
-                <td valign="top"><br>
+                <td valign="top">
                 <span class="header-font" style="font-size:15pt;line-height:2em">This is the modern drive-in:</span><br/>
                 <span>The <b><a href="http://en.wikipedia.org/wiki/Mobmov" target="_blank" style="text-decoration:underline">Mobile Movie</a></b> is bringing back the forgotten joy of <a href="http://en.wikipedia.org/wiki/Drive-in_theater" target="_blank" style="text-decoration:underline">the great American drive-in</a> in urban settings across the world. <b>Powered by cars</b> and video projectors, MobMov's are easy and affordable to set up. Abandoned warehouse walls spring to life with the sights and sounds of a big screen movie.
                  <a href="/about"  class="nodeco" style="text-decoration:underline">read more</a></span>
