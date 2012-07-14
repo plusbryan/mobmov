@@ -66,7 +66,7 @@ require("common/top.php");
                         }
                         if ($country != $last_country) {
                             $last_country = $country;
-                            $country = "-- " . $country . " ";
+                            $country = "- " . $country . " ";
                             print "<option value=''>".str_pad(strtoupper($country),25,"-")."</option>";
                         }
 
