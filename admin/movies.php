@@ -114,41 +114,13 @@ $setup = $_GET['setup'];
  <? } else { ?>
  <tr>
                 <td style="padding-bottom:10px;">
-                    <span class="page_head">choose a movie</span><br>
-						Choose the movie to show. <br>We have several that can be licensed for free, <br>or at minimal cost, or enter your own below if you plan to license it yourself:
+                    <span class="page_head">What will you show?</span>
                 </td>
                 </tr>
  <tr>
                 <td>
-				
-				<?=roundedbox(TOP,"d4ebff","8");?><form name="form2" method="post" action="locations.php?setup=y" enctype="multipart/form-data">
-       				 
-                                    
-                                   Licensable films: <select name="setup_mov">
-                                    <option value="" selected>(enter below)</option>
-                                    <?
-                                    if (!$global_superuser) { 
-		$showsql = " AND movie_show='y'";
-	}
-                                    $sql = "SELECT showing_movie_id,movie_title,cost FROM showings_movies WHERE permission $showsql ORDER BY movie_title";
-                                    $result = mysql_query($sql);
-                                    while($row = mysql_fetch_assoc($result)){
-                                    	foreach($row AS $key => $val){  
-                							$key = "it_".strtolower($key);
-                							$$key = $val; 
-                						}
-										?>
-										<option value="<?=$it_showing_movie_id?>"><?=$it_movie_title?> ($<?=$it_cost?>)</option>
-                             <? } 
-									mysql_free_result($result);
-								?>
-
-									</select>&nbsp;<input name="Submit" type="submit" class="form_button_big" value="Next"><br/>
-                                    </form> <?=roundedbox(BOTTOM);?>
-								
-									
-                                    <? if ($_REQUEST['error'] == "nomovie") {?><span class="error">You must select or enter the name of a movie</span><? } ?>
-                                    </td>
+                    <? if ($_REQUEST['error'] == "nomovie") {?><span class="error">You must enter the name of a movie</span><? } ?>
+                    </td>
               </tr>
  
   <? } ?>
@@ -161,7 +133,7 @@ $setup = $_GET['setup'];
                        <? } else { ?>
                         <input type="hidden" name="return" value="movies.php">
                        <? } ?>
-                                    <input type="hidden" name="table" value="showings_movies">
+                           <input type="hidden" name="table" value="showings_movies">
                     
                     <tr>
                       <td>&nbsp;</td>
@@ -177,10 +149,6 @@ $setup = $_GET['setup'];
                                   <tr>
                                     <td align="right" valign="top"><b>Movie Title</b></td>
                                     <td valign="top"><input name="movie_title" id='mtitle' type="text" class="form_text" size="45" value=""></td>
-                                  </tr>
-                                  <tr>
-                                    <td align="right" valign="top"><b>Info URL</b></td>
-                                    <td valign="top"><input name="movie_imdb" type="text" class="form_text" size="45" value="http://"> <a href="#" onclick="window.open('http://imdb.com/find?s=all&q=' + document.getElementById('mtitle').value);">find it on imdb?</a></td>
                                   </tr>
                                
                               

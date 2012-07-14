@@ -129,7 +129,7 @@ if (!$id) {
 				<? } else { ?>
 				
 				 <tr>
-                      <td><span class="page_head">choose a location</span>
+                      <td><span class="page_head">Where will it be?</span>
 					 </td>
               </tr>
 			  
@@ -186,15 +186,15 @@ if (!$id) {
 							  <tr>
 								<td align="right" valign="top"><b>Map URL</b></td>
 								<td style="color:#999999;"><input name="loc_map" type="text" class="form_text" size="45" value="http://">
-										<br>Recommended: <a href="http://maps.google.com">Google Maps</a></td>
+										<br>Recommended: <a href="http://maps.google.com" target="_blank">Google Maps</a></td>
 							  </tr>
 							  <tr>
-								<td align="right" valign="top"><b>Radio Default</b></td>
+								<td align="right" valign="top"><b>Radio</b></td>
 								<td style="color:#999999;"><input name="loc_radio" type="text" class="form_text" size="45" value="88.3FM"><br>The station you will usually set your radio tuner for at this location.</td>
 							  </tr>
 							  <tr>
 								<td align="right" valign="top"><b>Instructions</b></td>
-								<td style="color:#999999;"><textarea name="loc_instructs" cols="85" rows="10" class="form_text"></textarea><br>How to get there, etc</td>
+								<td style="color:#999999;"><textarea name="loc_instructs" cols="55" rows="10" class="form_text"></textarea><br>How to get there, etc</td>
 							  </tr>
 							  
 						  

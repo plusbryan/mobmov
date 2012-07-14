@@ -41,9 +41,14 @@ $verbose[] = "$sql";
             
               <tr>
                 <td valign="top">
+                    <?
+                    if (!$setup) {
+?>
                 <span class="page_head">Shows</span><br>
                 <span class="page_subhead">Set up and manage shows for your chapter here.</span><br><hr size="1" width="100%" noshade color="#dddddd"><br>
-
+                        <?
+                    }
+?>
                 	<table border="0" cellpadding="4" cellspacing="0" width="100%">
 					<?
 					if ($show_all && !$setup && $result) {
@@ -182,7 +187,7 @@ $verbose[] = "$sql";
                       <input type="hidden" name="return" value="<? if ($setup) {?>mailings.php?setup=y&new=y&type=showing&showing_id=%id%<? } else { ?>showings.php<? } ?>">
                     
                     <td style="padding-bottom:10px;">
-                    <span class="page_head">showing time &amp; date</span>
+                    <span class="page_head">When will it be?</span>
                 </td>
                     
                     <tr>

@@ -45,7 +45,7 @@ $verbose[] = $sql;
             <tr>
 				<? if ($setup) { ?>
 				<td style="padding-bottom:10px;">
-                    <span class="page_head">prepare mailer</span>
+                    <span class="page_head">New Mailing</span>
                 </td>
                 <? } else { ?>
                 <td valign="top">
@@ -323,18 +323,17 @@ if (mysql_num_rows($result)>0) {?>
                     <form name="form2" method="post" action="mailings_preview.php" enctype="multipart/form-data">
        				  <input type="hidden" name="table" value="mailings">
                       <input type="hidden" name="return" value="mailings.php">
-                      
+                      <? if (!$setup) { ?>
                     <tr>
                       <td>
-                      
-                      
-                      
+
                       	<span class="font-blue">&raquo; New Mailing </span><br>
                       
                       
                       </td>
                     </tr>
-                    <tr>
+                        <? } ?>
+                <tr>
                       <td>&nbsp;</td>
                     </tr>
                     <tr>
@@ -429,7 +428,7 @@ if (mysql_num_rows($result)>0) {?>
                                    
                          
                                   <tr>
-                                    <td><input name="Submit" type="submit" class="form_button" value="Send Mail">&nbsp;</td>
+                                    <td><input name="Submit" type="submit" class="form_button" value="Preview">&nbsp;</td>
                                   </tr> 
                          
                       </table></td>

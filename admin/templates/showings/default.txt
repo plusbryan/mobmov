@@ -5,11 +5,8 @@ MobMov.org & MobMov %chapter_title% present:
 %showing_date% at %showing_time%
 %chapter_location%
 **********************************************************************
-Tell us you're coming! %rsvp%.
-
-
-
-%feature_info%
+Tell us you're coming:
+%rsvp%
 
 **********************************************************************
  LOCATION
@@ -19,11 +16,10 @@ Tell us you're coming! %rsvp%.
 %location_instructs%
 
 **********************************************************************
- RADIO STATION
-**********************************************************************
-%location_radio%
-
-**********************************************************************
  INSTRUCTIONS
 **********************************************************************
-The MobMov is free and welcome to all! For more information, please visit: http://www.mobmov.org/guides.php
+1. Get there early for the best spot
+2. Tune your radio to: %location_radio%
+3. Have fun!
+
+For more information, please visit: http://www.mobmov.org/guides

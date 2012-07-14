@@ -457,7 +457,7 @@ class checkformat {
 	}
 }
 
-
+// send email
 function email($to,$subject,$body) {
 	
 	require_once('AmazonSESMailer.php');
@@ -475,7 +475,7 @@ function email($to,$subject,$body) {
 		$mail->AddAddress($to);
 	}
     
-    $mail->SetFrom('info@mobmov.org');
+    $mail->SetFrom('info@mobmov.org','MobMov');
     $mail->Subject = $subject;
     $mail->Body = $body;
 

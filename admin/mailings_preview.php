@@ -48,12 +48,8 @@ db_connect();
             	}
 	                                
 	    }
-	   
-
      
         $allrep = array();
-        
-       
 
 		// GET USER TABLE OF SENDS
 		if ($it_chapter_id == "all") {
@@ -85,19 +81,7 @@ db_connect();
 			$count_subscribers++;
 		}
 		mysql_free_result($result);
-		
-		/*
-		if ($add_chapter_heads) { //email chapter heads when people send email to their lists
-			$sql ="SELECT m.email FROM chapters AS c CROSS JOIN members AS m ON (c.coord_id = m.member_id) WHERE m.email <> ''";
-			$mailing_type .= " & all drivers";
-			$result = mysql_query($sql);
-			while($row = mysql_fetch_array($result)){ 
-				$allusers .= ",".$row['email'];
-				$count_subscribers++;
-			}
-			mysql_free_result($result);
-		}
-		*/
+
                         
 		$allusers = "info@mobmov.org,".$allusers;
 	   
@@ -151,8 +135,6 @@ db_connect();
 										
 			$it_subject = "$it_subject";
 			
-		} else {
-			print "not a poll";
 		}
                         
                         ?>
@@ -166,10 +148,9 @@ db_connect();
 <input type="hidden" name="datesend_date" value="<?=$it_datesend_date?>">
 <input type="hidden" name="body" value="<?=stripslashes(htmlentities($body))?>">
 <input type="hidden" name="send_to" value="<?=$allusers?>">
-<font size=4>To <?=$count_subscribers?> subscribers (<?=$mailing_type?>):<br></font>
+
+<font size=4>To <?=$count_subscribers?> subscribers of <?=$mailing_type?>:<br></font>
 <table border="0" cellspacing="3" cellpadding="6" width="500">
-		
-		
 		<tr>
 			<td bgcolor="#dddddd"><b><?=stripslashes($it_subject)?></b></td>
 		  </tr>
@@ -183,8 +164,9 @@ db_connect();
 		
                          
                       </table>
-                      <br><br><input name="Submit" type="submit" class="form_button" value="Send"> on or after <?=$it_datesend_date?> @ <?=$it_datesend_time?>&nbsp;
-                      <a href="mailings.php">Cancel</a>
+                      <br><input name="Submit" type="submit" class="form_button" value="Send"> <a href="mailings.php">Cancel</a>
+                     <br><br>on or after <?=$it_datesend_date?> @ <?=$it_datesend_time?>&nbsp;
+
                     
 					</form>
                 </td>
